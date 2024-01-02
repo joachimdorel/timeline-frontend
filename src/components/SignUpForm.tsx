@@ -44,7 +44,7 @@ const SignUpForm: React.FC = () => {
           <input
             type="password"
             value={confirmPassword}
-            onChange={e => setPassword(e.target.value)}
+            onChange={e => setConfirmPassword(e.target.value)}
             placeholder="Confirm your password"
             className="border border-blue-300 rounded-sm p-1"
             required
