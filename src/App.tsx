@@ -7,10 +7,10 @@ import {
 
 import './App.css';
 
+import Home from './components/Home';
 import SignUpForm from './components/SignUpForm';
 import LoginForm from './components/LoginForm';
-import Home from './components/Home';
-
+import PageNotFound from './components/PageNotFound';
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
         <Route path="" element={<Home />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/login" element={<LoginForm />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );
